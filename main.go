@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	cache := inMemoryCash.NewCache()
+	cache := inMemoryCash.NewCache(3, 500)
 
 	cache.Set("key1", "Value1")
 	fmt.Println(cache.Get("key1"))
